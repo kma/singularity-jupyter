@@ -24,7 +24,7 @@ From: ubuntu:latest
     apt-get clean
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-    #create bind points for MesoFC HPC environment
+    # create bind points for MesoFC HPC environment
     mkdir -p /Work
     mkdir -p /Home
 
