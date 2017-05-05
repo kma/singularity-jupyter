@@ -7,7 +7,7 @@ From: ubuntu:latest
 %post
     # commands to be executed inside container during bootstrap
       
-   # locale-gen en_US.UTF-8
+    # locale-gen en_US.UTF-8
     export LC_ALL=C
  
     apt-get -y update
