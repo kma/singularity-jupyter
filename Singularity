@@ -6,17 +6,13 @@ From: ubuntu:latest
     
 %post
     # commands to be executed inside container during bootstrap
-   
-   # add universe repo and install some packages
-   #  sed -i '/xenial.*universe/s/^#//g' /etc/apt/sources.list
-   
+      
    # locale-gen en_US.UTF-8
-     export LC_ALL=C
+    export LC_ALL=C
  
     apt-get -y update
     apt-get -y install vim wget python python-pip
- 
- 
+  
     # install pandas 
     pip install --upgrade pip
     pip install  jupyter
@@ -28,9 +24,7 @@ From: ubuntu:latest
     apt-get clean
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-    # create notebooks inside the container
-
-    # create bind points for MesoFC HPC environment
+    #create bind points for MesoFC HPC environment
     mkdir -p /Work
     mkdir -p /Home
 
