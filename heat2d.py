@@ -1,5 +1,6 @@
-"""2D Heat equation using finite differences"""
-
+"""
+ 2D Heat equation using finite differences
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 import sys
