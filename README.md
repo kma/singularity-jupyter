@@ -8,6 +8,12 @@ $ sudo singularity create -s 1200 jupyter.img
 $ sudo singularity bootstrap jupyter.img Singularity 
 ```
 
+## Use singularity-hub to pull this container
+
+```bash
+singularity pull shub://852
+```
+
 ## Run the container
 
 ```bash
@@ -15,10 +21,5 @@ $ singularity run jupyter.img
 ```
 
 This will start jupyter server on port 8888. The current directory will be used as the notebook direcory.
-
-## Use singularity-hub to pull this container
-
-```bash
-
-```
+You can connect to the server and select the notebook file [python_heat2d.ipynb](python_heat2d.ipynb). 
 
