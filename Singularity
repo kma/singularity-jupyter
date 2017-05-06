@@ -1,5 +1,5 @@
 BootStrap: docker
-From: ubuntu:latest
+From: ubuntu:xenial
  
 %setup
     # commands to be executed on host outside container during bootstrap
