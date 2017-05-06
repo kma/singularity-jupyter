@@ -10,9 +10,6 @@ $ sudo singularity bootstrap jupyter.img Singularity
 
 ## Use singularity-hub to pull this container
 
-```bash
-singularity pull shub://852
-```
 
 ## Run the container
 
