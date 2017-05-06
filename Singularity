@@ -6,8 +6,11 @@ From: ubuntu:latest
     
 %post
     # commands to be executed inside container during bootstrap
-      
-    # locale-gen en_US.UTF-8
+ 
+    # add universe repo and install some packages
+    sed -i '/xenial.*universe/s/^#//g' /etc/apt/sources.list
+   
+   # locale-gen en_US.UTF-8
     export LC_ALL=C
  
     apt-get -y update
