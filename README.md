@@ -10,7 +10,11 @@ $ sudo singularity bootstrap jupyter.img Singularity
 
 ## Use singularity-hub to pull this container
 
-
+``
+$ singularity pull shub://906
+OR
+$ singularity pull shub://kma/singularity-jupyter:master
+``
 ## Run the container
 
 ```bash
