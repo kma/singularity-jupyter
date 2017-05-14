@@ -25,7 +25,7 @@ From: ubuntu:xenial
     # clean tmp files
     apt-get autoremove -y
     apt-get clean
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+   # rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
     # create bind points for MesoFC HPC environment
     mkdir -p /Work
